@@ -1,18 +1,16 @@
-.titulo{
-    color: blue;
-    text-align: center;
-    box-shadow: inset;
+
+#welcome{
+    font-size: 90px;
+    text-align: right;
+    padding: 350px 15px;
+    
+    color:#59D3A5;
 }
 
-.img{
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
+#botaoconta{
+    color: black;
+    background-color:#2EA6AE;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+    padding: 9px 16px;
 }
 
-#wel{
-    color: ;
-    font-size: 5px;
-
-}

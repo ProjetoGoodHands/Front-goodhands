@@ -7,15 +7,11 @@ import {Box} from '@mui/material';
 function Footer() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center">
+            <Grid container direction="row" justifyContent="center" alignItems="center" >
                 <Grid alignItems="center" item xs={12}>
-                    <Box style={{ backgroundColor: "#green" }}>
-                       
-                        
-                      
-                    </Box>
+                    
                     <hr />
-                    <Box style={{ backgroundColor: "#59D3A5", height: "60px" }}>
+                    <Box style={{ backgroundColor: "#59D3A5", height: "80px" }} >
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2023 Copyright:</Typography>
                         </Box>

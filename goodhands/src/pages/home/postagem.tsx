@@ -14,22 +14,25 @@ function Home() {
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>Crie uma nova Postagem e ajude a salvar uma vida!!</Typography>
                     </Box>
                     <Grid>  
-                        <img src="https://cdn.discordapp.com/attachments/1087794407052419213/1120330131555225620/LogoUnica.png" alt="" id="iimage"/>           
+                        <img src="https://stories.freepiklabs.com/api/vectors/add-notes/bro/render?color=&background=complete&hide=" alt="" id="iimage"/>   
+                             
                     </Grid>
-                    
+                   
                 </Grid>
                 <Grid  alignItems="center" item xs={4} id="cadastro">
                     <form>
-                    <p id="titulo">Titulo</p>
-                    <TextField id='caixapostagem' label='Digite um título para a sua postagem' variant='outlined' name='usuario' margin='normal' fullWidth />
+                    <p id="titulo">Titulo:</p>
+                    <TextField id='caixapostagem' label='Digite um título para a sua postagem' variant='outlined' name='titulo' margin='normal' fullWidth />
 
-                    <p id="titulo">Descrição</p>
-                    <TextField id='caixapostagemdesc' label='Descreva o Objetivo da sua postagem' variant='outlined' name='usuario' margin='normal' fullWidth />
+                    <p id="titulo">Descrição:</p>
+                    <TextField id='caixapostagemdesc' label='Descreva o Objetivo da sua postagem' variant='outlined' name='descricao' margin='normal' fullWidth />
 
-                    <p id="titulo">Meta de arrecadação</p>
-                    <TextField id='caixapostagem' label='Digite um valor ' variant='outlined' name='usuario' margin='normal' fullWidth />
-
-                    <input type="button" value="Criar uma Postagem" /><br />
+                    <p id="titulo">Meta de arrecadação:</p>
+                    <TextField id='caixapostagem' label='Digite um valor ' variant='outlined' name='meta' margin='normal' fullWidth />
+                    
+                    <Button type='submit' variant='contained' id='logbotao' >
+                                    Criar Postagem
+                                </Button>
                     </form>
                 </Grid>
   

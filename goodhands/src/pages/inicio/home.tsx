@@ -1,26 +1,25 @@
 import React from "react";
 
-import { Button, Grid, Paper, Typography } from '@material-ui/core'
+import { Button, Grid,Typography } from '@material-ui/core'
 import { Box } from "@mui/material";
 import './Home.css';
 
 function Home() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#59D3A5" }}>
-                <Grid alignItems="center" item xs={8} >
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white",  fontWeight: "bold"}}>Seja bem vindo(a)!</Typography >
-                    </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
+        <Grid xs={10} style={{
+                backgroundImage: `url(https://stories.freepiklabs.com/api/vectors/holding-hands/bro/render?color=&background=complete&hide=) `,
+                backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center', 
+            }} id="img1">
+                     <Typography id="welcome" >Seja bem vindo(a)!</Typography >
+                     <br /><br />
+                     <Box display="flex" justifyContent="center">
+                        <Box marginRight={12}>
                         </Box>
-                        <Button variant="outlined" style={{borderColor: "black", backgroundColor: "white", color: "black" }}>Criar uma conta</Button>
+                        <Button variant="outlined" id="botaoconta">Criar uma conta</Button>
                     </Box>
-                </Grid>
-                
-                
             </Grid>
+           
         </>
     );
 }
