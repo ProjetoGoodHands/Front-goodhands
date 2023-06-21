@@ -1,3 +1,7 @@
+body{
+   background-color:  #DCECE2;
+}
+
 
 #cabeçalho{
 
@@ -10,7 +14,7 @@
 
 #menu{
    
-    font: 30px Arial;
+    font: 25px Arial;
     text-decoration: none;
     color: white;
 }

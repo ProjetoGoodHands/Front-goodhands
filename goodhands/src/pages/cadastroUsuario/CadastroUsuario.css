@@ -1,0 +1,34 @@
+.imagem2{
+    background-image: url(https://stories.freepiklabs.com/api/vectors/tech-company/bro/render?color=&background=complete&hide=);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 74vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#texto1{
+    color: white;
+    background-color: #59D3A5;
+    border-radius: 10px;
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+}
+
+
+.btnCancelar{
+    margin-right: 20px !important;
+}
+
+#botaocad{
+    background-color: white;
+    color: #59D3A5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+}
+#botaocad1{
+    background-color:#59D3A5;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+}

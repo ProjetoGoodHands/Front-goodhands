@@ -30,13 +30,13 @@ function Navbar() {
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit" >
-                                <a href="" id='menu'>Cadastro / </a>
+                                <a href="http://localhost:5173/cadastro" id='menu'>Cadastro / </a>
                             </Typography>
                         </Box>
                       
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                            <a href="http://localhost:5173/postagem" id='menu'>Postagem / </a>
+                            <a href="" id='menu'>Postagens / </a>
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>

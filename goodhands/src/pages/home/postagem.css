@@ -1,41 +1,42 @@
 
 
 #ola{
+    height: 550px;
     background-color:#59D3A5;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+    
 }
 
 #iimage{
 
-   padding: 5px 275px;
+   padding: 5px 155px;
 
-    width: 500px;
+    width: 400px;
 }
 
 #cadastro{
-    
+    height: 540px;
     background-color: #DCECE2;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
 }
 
-#campos{
-   width: 155px;
-    background-color: #d9d9d9;
-    border-radius: 15px;
-}
+
 
 #titulo{
+
+    height: 1px;
     color: gray;
-font: 25px normal  ;
+font: 20px normal  ;
 
 padding-left: 1px;
 
 }
 
 #caixapostagem{
+   
     color: black;
     font: normal 14pt italic;
     background-color: white;
@@ -43,8 +44,10 @@ padding-left: 1px;
     
 }
 #caixapostagemdesc{
+  
     color: black;
     font: normal 14pt italic;
     background-color: white;
-    height: 250px;
+    height: 127px;
 }
+

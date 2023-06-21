@@ -1,10 +1,10 @@
 
 #welcome{
-    font-size: 90px;
+    font-size: 80px;
     text-align: right;
     padding: 350px 15px;
     
-    color:#59D3A5;
+    color:gray;
 }
 
 #botaoconta{
@@ -12,5 +12,10 @@
     background-color:#2EA6AE;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
     padding: 9px 16px;
+    text-decoration: none;
 }
 
+#img1 {
+
+   
+}
