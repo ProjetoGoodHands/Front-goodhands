@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Button, Grid,Typography } from '@material-ui/core'
 import { Box } from "@mui/material";
 import './Home.css';
@@ -11,7 +9,7 @@ function Home() {
                 backgroundImage: `url(https://stories.freepiklabs.com/api/vectors/holding-hands/bro/render?color=&background=complete&hide=) `,
                 backgroundRepeat: 'no-repeat'
             }} id="img1">
-                     <Typography id="welcome" >Seja bem vindo(a)!</Typography >
+                     <Typography id="welcome" >Seja bem vinde!</Typography >
                      <Box display="flex" justifyContent="center">
                         <Box >
                         </Box>
