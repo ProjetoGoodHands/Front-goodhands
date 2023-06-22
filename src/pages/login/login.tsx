@@ -46,35 +46,47 @@ function Login() {
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <Box marginTop={2} textAlign='center'>
-                            <Button type='submit' variant='contained' color='primary'>
-                                Logar
-                            </Button>
-                        </Box>
-                    </form>
-                    <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
-                        </Box>
-                        <Link to='/cadastro'>
-                            <Typography variant='subtitle1' gutterBottom align='center' style={{ fontWeight: 'bold' }}>Cadastre-se</Typography>
-                        </Link>
-                    </Box>
-                </Box>
-            </Grid>
-            <Grid xs={6} style={{
-                backgroundImage: `url(https://stories.freepiklabs.com/api/vectors/fingerprint/bro/render?color=&background=complete&hide=) `,
-                backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '70vh', backgroundSize: 'cover', backgroundPosition: 'center'
-            }}>
-
-            </Grid>
+        <Grid xs={7}>
+            <Box className='informacoes-login'>
+                <img className="img-login" src="https://i.imgur.com/2b2Kk4X.png" alt="" />
+            </Box>
         </Grid>
+        <Grid xs={5}  style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
+            <div className='container' >
+                <div className='container-info'>
+                <form onSubmit={onSubmit}>
+                    <Typography variant='h3' gutterBottom className='textos1'>Login</Typography>
+                    <Typography className='text-info'>Usuario</Typography>
+
+                    <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='standard' name='usuario' margin='normal' fullWidth />
+                    <Typography className='text-info'>Senha</Typography>
+                    <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='standard' name='senha' margin='normal' type='password' fullWidth />
+
+                    <Box marginTop={2} textAlign='center'>
+                        <Button  className='button' type='submit' variant='contained' color='primary'>
+                            Entrar
+                        </Button>
+                    </Box>
+                </form>
+                   
+                   
+                
+                </div>
+                <Box display='flex' justifyContent='center' marginTop={2}>
+                    <Box marginRight={1}>
+                        <Typography variant='subtitle1' gutterBottom align='center'
+                            className='cadastre-se'>Não tem uma conta?</Typography>
+                    </Box>
+
+                    <Link to='/cadastro'>
+                         <Typography id='cadastra' variant='subtitle1' gutterBottom align='center' className='cadastre-se'>Cadastre-se</Typography>
+                        
+                    </Link>
+                </Box>
+            </div>
+        </Grid>
+    </Grid>
+
     );
 }
 
