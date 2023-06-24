@@ -48,7 +48,7 @@ function Login() {
         <Grid container direction='row' justifyContent='center' alignItems='center'>
         <Grid xs={7}>
             <Box className='informacoes-login'>
-                <img className="img-login" src="https://i.imgur.com/2b2Kk4X.png" alt="" />
+                <img className="img-login" src="https://cdn.discordapp.com/attachments/1087794407052419213/1122272181120946216/tela_de_login_2_1.png" alt="" />
             </Box>
         </Grid>
         <Grid xs={5}  style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
@@ -78,7 +78,7 @@ function Login() {
                             className='cadastre-se'>Não tem uma conta?</Typography>
                     </Box>
 
-                    <Link to='/cadastro'>
+                    <Link to='/cadastro' className="text-decorator-none">
                          <Typography id='cadastra' variant='subtitle1' gutterBottom align='center' className='cadastre-se'>Cadastre-se</Typography>
                         
                     </Link>

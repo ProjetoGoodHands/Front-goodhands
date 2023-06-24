@@ -1,5 +1,8 @@
 .informacoes-login{
-    background-color: #59d3a5; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:#8f388d ; 
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
@@ -9,7 +12,7 @@
 }
 
 .img-login{
-    width: 100%;
+    width: 80%;
 }
 
 .textos1{
@@ -27,8 +30,6 @@
     align-items: center;
     flex-direction: column;
     margin: 0 !important;
-    width: 80%;
-    padding: 60px 0;
    
  }
 
@@ -61,25 +62,33 @@
 
 
 .button{
-    background-image: linear-gradient( to bottom right , rgb(95, 216, 210),rgb(10, 53, 67));
+    background-image: linear-gradient( to bottom right ,#c269be,#8f388d);
     font-size: 1.7rem !important;
-    width: 100%;
-    height: 4rem;
+    width: 90%;
     font-weight: 700 !important;
     border-radius: 20px !important;
 }
 
 .button:hover{
-    background-image: linear-gradient( to bottom right , rgb(10, 53, 67),rgb(95, 216, 210));
+    background-image: linear-gradient( to bottom right , #8f388d,#c269be);
     box-shadow: 2px 5px 20px rgba(0, 0, 0.6, 0.9) !important;
 }
 
 #cadastra{
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-    color: #59d3a5;
+    color: #8f388d;
+}
+
+.text-decorator-none{
+    text-decoration: none;
 }
 
 .cadastre-se{
     margin-top: 20px !important;
     font-size: 22px !important;
+    text-decoration: none !important;
+}
+
+.img-goodHends{
+    height: 200px;
 }

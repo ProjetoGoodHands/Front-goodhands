@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:wght@300;400;700&family=DM+Sans:ital@1&family=Heebo:wght@300;400;700&family=Nunito+Sans:wght@400;600&family=Source+Code+Pro:ital,wght@0,200;0,400;1,500&family=Work+Sans:ital,wght@1,400;1,600&display=swap');
+
+#sobre-nos-apresentacao{
+    height: 450px !important;
+    width: 100% !important;
+    background-image: url('../../assets/img/hero-sobre-nos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-primeiro{
+     margin: 30px 0 0 12px;
+}
+
+.texto-primeiro .descubra-quem-somos{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    line-height: 0.6;
+    text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
+}
+
+.decoracao-texto-sobre{
+    font-family: 'Averia Serif Libre', cursive !important;
+    color: #dc81d7;
+}
+
+.button-tela-sobre{
+    text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
+    font-family: 'Averia Serif Libre', cursive !important;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient( to bottom right , #4e034d,#df5ad8);
+    height: 40px;
+    width: 200px; 
+    border-radius: 20px;
+    margin: 12px 0 0 5px;
+    border: none;
+}
+
+.button-tela-sobre:hover{
+    background-image: linear-gradient( to bottom right , #df5ad8, #4e034d);
+    cursor: pointer;
+}
+
+.apresentacao-goodhands-1{
+    
+    height: 350px;
+     background-color: rgb(219, 217, 217);
+}
+.apresentacao-goodhands-2{
+    padding: 20px;
+     background-color: rgb(155, 154, 154);
+}
+
+.apresentacao-goodhands-3{
+    
+    height: 350px;
+    padding: 20px;
+    background-color: rgb(219, 217, 217);
+    margin-bottom: 70px;
+}
+
+.container-sobre-nos{
+    border-radius: 12px;
+    margin: 30px 12px;
+    background-color: rgb(218, 214, 214);
+    padding: 30px;
+    
+}
+
+.quem-somos-h3{
+    font-family: 'Averia Serif Libre', cursive !important;
+    margin: 25px 0 70px 0  !important;
+}
+
+.goodHands-sobre-nos{
+    height: 300px;
+}
+
+.quem-somos{
+    text-indent: 20px;
+    font-family: 'Averia Serif Libre', cursive !important;
+    font-size: 17px;
+}
+
+#logo-sobre-nos{
+    margin: 0 !important;
+    width: 60px;
+}
+
+.container-informacos-dev{
+    background-color: rgb(185, 182, 182);
+}
+
+.todo-time{
+    background-color: rgb(185, 182, 182);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-info-develop{
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 620px;
+    padding: 8px;
+    border-bottom: solid 1px;
+}
+
+.container-info-develop-2{
+    margin: 10px 5px;
+    display: flex;
+    max-width: 620px;
+    justify-content: center;
+    align-content: center;
+    border-bottom: solid 1px;
+    padding: 8px;
+
+}
+
+.img-sobre-develop{
+    display: flex;
+    align-items: center;
+}
+
+.ft-time{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin: 12px;
+}
+
+.container-desenvolvedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-desenvolvedor .nome-develop{
+    padding-left: 35px;
+    font-family: 'Averia Serif Libre', cursive !important;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.container-desenvolvedor .sobre-mim{
+    font-family: 'Averia Serif Libre', cursive !important;
+    font-size: 14px;
+    text-indent: 14px;
+    font-weight: 600;
+}
