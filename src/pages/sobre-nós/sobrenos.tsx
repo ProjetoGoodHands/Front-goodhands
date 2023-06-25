@@ -27,12 +27,7 @@ function Sobrenos() {
                 </Grid>
             </Grid>
 
-            <Grid md={12} container direction="row" justifyContent="center" alignItems="center" className='apresentacao-goodhands-1'>
-
-                <Grid md={12}>
-
-                </Grid>
-
+            <Grid md={12} container justifyContent="center" alignItems="center" className='apresentacao-goodhands-1'>
                     
                 <Grid alignItems="center" item md={6}>
                     <Box>
@@ -47,8 +42,8 @@ function Sobrenos() {
                 </Grid>
 
                 <Grid item md={6}>
-                    <Box paddingX={5} textAlign={'center'}>
-                        <img className="goodHands-sobre-nos" src="https://cdn.discordapp.com/attachments/1087794407052419213/1120330267660390530/LogoUnicaPNG.png" referrerPolicy="" />
+                    <Box  textAlign={'center'}>
+                        <img className="goodHands-sobre-nos" src="https://cdn.discordapp.com/attachments/1087794407052419213/1120330267660390530/LogoUnicaPNG.png" referrerPolicy="no-referrer" />
                     </Box>
                 </Grid>
             </Grid>
