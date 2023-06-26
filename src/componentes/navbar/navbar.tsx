@@ -30,7 +30,7 @@ function Navbar() {
                             <Link to="/home" className='Link-logar' >
                                 <Box mx={1} className='cursor'>
                                     <Typography variant="h6" color="inherit">
-                                        home
+                                        Home
                                     </Typography>
                                 </Box>
                             </Link>
@@ -39,21 +39,29 @@ function Navbar() {
                         <Link to="/posts" className='Link-logar'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
-                                    postagens
+                                    Postagens
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/sobre" className='Link-logar'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
-                                    sobre
+                                    Sobre
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/cadastro" className='Link-logar'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
-                                    cadastrar
+                                    Cadastrar
+                                </Typography>
+
+                            </Box>
+                        </Link>
+                        <Link to="/contato" className='Link-logar'>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit">
+                                    Contato
                                 </Typography>
 
                             </Box>
@@ -63,7 +71,7 @@ function Navbar() {
                     <Box display="flex" justifyContent="space-between" >
                         <Box mx={1} className='cursor' onClick={goLogout} >
                             <Typography variant="h6" color="inherit">
-                                logout
+                                Logout
                             </Typography>
                         </Box>
                     </Box>

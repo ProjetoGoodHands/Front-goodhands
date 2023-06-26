@@ -7,6 +7,7 @@ import Sobrenos from './pages/sobre-nós/sobrenos';
 import Postagem from './pages/home/postagem';
 import Home from './pages/inicio/home';
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';
+import Contato from './pages/contato/Contato';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/postagem" element={<Postagem />} />
           <Route path="/sobre" element={<Sobrenos />} />
           <Route path="/cadastro" element={<CadastroUsuario />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </div>
       <Footer />
