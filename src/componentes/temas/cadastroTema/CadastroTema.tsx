@@ -13,7 +13,8 @@ function CadastroTema() {
     const [token, setToken] = useLocalStorage('token');
     const [tema, setTema] = useState<Tema>({
         id: 0,
-        descricao: ''
+        causa: '',
+        metaarrecadacao:0
     })
 
     useEffect(() => {
@@ -31,7 +32,7 @@ function CadastroTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
               'Authorization': token
             }
@@ -53,14 +54,14 @@ function CadastroTema() {
     
             if (id !== undefined) {
                 console.log(tema)
-                put(`/tema`, tema, setTema, {
+                put(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
                 })
                 alert('Tema atualizado com sucesso');
             } else {
-                post(`/tema`, tema, setTema, {
+                post(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
@@ -79,7 +80,8 @@ function CadastroTema() {
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
+                <TextField value={tema.causa} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="causa" label="causa" variant="outlined" name="causa" margin="normal" fullWidth />
+                <TextField value={tema.metaarrecadacao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="metaarrecadacao" label="meta arrecadacao" variant="outlined" name="metaarrecadacao" margin="normal" fullWidth type='number'/>
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>

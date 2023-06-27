@@ -24,7 +24,7 @@ useEffect(()=>{
 
 
 async function getTema(){
-  await busca("/tema", setTemas, {
+  await busca("/temas", setTemas, {
     headers: {
       'Authorization': token
     }
@@ -47,7 +47,7 @@ useEffect(()=>{
               Tema
             </Typography>
             <Typography variant="h5" component="h2">
-            {tema.descricao}
+            {tema.causa}
             </Typography>
           </CardContent>
           <CardActions>
