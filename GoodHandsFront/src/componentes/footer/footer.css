@@ -1,0 +1,12 @@
+.color-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color:#762075;
+   height: 80px;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
