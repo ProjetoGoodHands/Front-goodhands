@@ -1,13 +1,12 @@
-.text-decorator-none{
-    text-decoration: none;
+.color-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color:#762075;
+   height: 80px;
 }
 
-.borda{
-
-    color: white;
-    background-color: #59D3A5;
-    border-radius: 10px;
-    
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
-
+.text-decorator-none{
+    text-decoration: none;
 }
