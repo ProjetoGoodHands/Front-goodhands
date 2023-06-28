@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import { TabContext, TabPanel } from '@material-ui/lab';
 import ListaPostagem from '../listapostagem/ListaPostagem';
 import './TabPostagem.css';
+import { Link } from 'react-router-dom';
 
 
 function TabPostagem() {
@@ -13,10 +14,21 @@ function TabPostagem() {
   }
   return (
     <>
-      <TabContext value={value}>
-        <AppBar position="static">
+      <TabContext value={value} >
+        <AppBar position="static" className='tabcor'>
           <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1" />
+            <Link to="/posts" className="corletras">
+              <Tab label="Postagens" value="1" />
+            </Link>
+            <Link to="/formulariopostagem" className="corletras">
+              <Tab label="Criar postagem" value="2" />
+            </Link>
+            <Link to="/formulariotema" className="corletras">
+              <Tab label="Cadastrar causa" value="3" />
+            </Link>
+            <Link to="/temas" className="corletras">
+              <Tab label="Causas" value="4" />
+            </Link>
           </Tabs>
         </AppBar>
         <TabPanel value="1" >

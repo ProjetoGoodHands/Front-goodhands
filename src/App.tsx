@@ -3,7 +3,7 @@ import Login from './pages/login/login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './componentes/footer/footer';
 import Navbar from './componentes/navbar/navbar';
-import Sobrenos from './pages/sobre-nós/sobrenos';
+import Sobrenos from './pages/sobrenos/sobrenos';
 import Postagem from './pages/home/postagem';
 import Home from './pages/inicio/home';
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';

@@ -53,20 +53,14 @@
 .apresentacao-goodhands-1{
     
     min-height: 350px;
-     background-color: rgb(219, 217, 217);
+     background-color: #d1cfcf;
 }
 .apresentacao-goodhands-2{
     padding: 20px;
-     background-color: rgb(155, 154, 154);
+     background-color: #ffffff;
 }
 
-.apresentacao-goodhands-3{
-    
-    min-height: 350px;
-    padding: 20px;
-    background-color: rgb(219, 217, 217);
-    margin-bottom: 70px;
-}
+
 
 .container-sobre-nos{
     border-radius: 12px;
@@ -97,11 +91,11 @@
 }
 
 .container-informacos-dev{
-    background-color: rgb(185, 182, 182);
+    background-color: #a950a6;
 }
 
 .todo-time{
-    background-color: rgb(185, 182, 182);
+    background-color: #a950a6;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

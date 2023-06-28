@@ -70,19 +70,7 @@ function Sobrenos() {
                 </Grid>
             </Grid>
 
-            <Grid md={12} container direction="row" justifyContent="center" alignItems="center" className='apresentacao-goodhands-3'>
-                <Grid alignItems="center" item md={6}>
-                    <Box>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='devscard2' >Sobre o Projeto</Typography>
-                        <Typography variant="body1" gutterBottom color="textPrimary" component="h5" align="center" className='quem-somos' >Durante o Bootcamp Desenvolvedor Java Full Stack desenvolvemos este projeto integrador de conclusão do curso. Nosso e-commerce se baseou na Agenda 2030 da ONU, com foco em Sustentabilidade. Para a construção, utitlizamos tecnologias: Java, Spring Boot, Postgree, MySql, React, TypeScript, HTML e CSS. </Typography>
-                    </Box>
-                </Grid>
-                <Grid item md={6} >
-                    <Box paddingX={5} textAlign={'center'}>
-                        <img src="https://imgur.com/oLoGgZG.png" referrerPolicy="no-referrer" />
-                    </Box>
-                </Grid>
-            </Grid>
+            
 
             <Grid container alignItems="center">
                 <Grid xs={12} >
