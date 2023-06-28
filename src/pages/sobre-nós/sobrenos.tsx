@@ -1,7 +1,11 @@
 import { Box, Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import "./sobrenos.css"
-import imagem from '../../assets/img/goodheds.jpg'
+import kaique from '../../assets/img/kaique.jpg'
+import gustavo from '../../assets/img/gustavo.jpg'
+import roger from '../../assets/img/roger.jpg'
+import ramon from '../../assets/img/ramon.jpg'
+import img from '../../assets/img/Design team-amico.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -9,8 +13,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 function Sobrenos() {
     return (
         <>
-            <Grid md={12} container direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={12} id='sobre-nos-apresentacao'>
+            <Grid md={12} container id='sobre-nos-apresentacao' >
+                
                     <Box className='texto-primeiro'>
                         <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
                             buscamos <span className='decoracao-texto-sobre'>soluções criativas</span> .
@@ -24,7 +28,10 @@ function Sobrenos() {
 
                         <button className='button-tela-sobre'>saiba mais</button>
                     </Box>
-                </Grid>
+                    <Box>
+                        <img className='ft-equipe' src={img} alt="" />
+                    </Box>
+                
             </Grid>
 
             <Grid md={12} container justifyContent="center" alignItems="center" className='apresentacao-goodhands-1'>
@@ -88,63 +95,71 @@ function Sobrenos() {
 
                         <Box className='container-info-develop'>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={imagem} alt="" />
+                                <img className='ft-time' src={kaique} alt="foto do desenvolvedor kaique" />
                             </Box>
 
                             <Box className='container-desenvolvedor'>
                                 <Typography className='nome-develop' variant="h4" gutterBottom> João kaique da silva</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut reiciendis dicta sunt porro voluptates quis ea quaerat vero ex eveniet at voluptas praesentium magnam cupiditate harum, natus fugiat? Quae.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Tenho 23 anos e moro em São Paulo. Recentemente, concluí o Bootcamp de Java FullStack e estou empolgado com minha formação e as oportunidades que surgem a partir dela. Sou apaixonado por esportes e tecnologia, e estou sempre em busca de novas oportunidades de aprendizado.</Typography>
 
-                                <Typography variant="subtitle1" gutterBottom>  <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /></Typography>
+                                <Typography variant="subtitle1" gutterBottom>
+                                    <a className='decoration-none' href="https://github.com/kaiquesilvadev"> <GitHubIcon /></a>
+                                    <a className='decoration-none' href="https://www.linkedin.com/in/joaokaique/"> <LinkedInIcon /></a></Typography>
                             </Box>
                         </Box>
 
                         <Box className='container-info-develop-2'>
 
                             <Box className='container-desenvolvedor'>
-                                <Typography className='nome-develop' variant="h4" gutterBottom> nome do individuo</Typography>
+                                <Typography className='nome-develop' variant="h4" gutterBottom> Roger Ramos</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut reiciendis dicta sunt porro voluptates quis ea quaerat vero ex eveniet at voluptas praesentium magnam cupiditate harum, natus fugiat? Quae.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Nascido e criado em São Paulo, possuo formação técnica em informática e recentemente concluí o boot camp de Java FullStack da Generation Brasil. Sou um entusiasta da tecnologia desde a minha infância. Tenho uma paixão por games, futebol e dedico uma parte do meu tempo a musica estudando guitarra.</Typography>
 
-                                <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /></Typography>
+                                <Typography variant="subtitle1" gutterBottom>
+                                    <a className='decoration-none' href="https://github.com/custicol"><GitHubIcon /></a>
+                                    <a className='decoration-none' href="https://www.linkedin.com/in/roger-ramos-0b43361b6/"><LinkedInIcon /></a></Typography>
                             </Box>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={imagem} alt="" />
+                                <img className='ft-time' src={roger} alt="" />
                             </Box>
                         </Box>
 
                         <Box className='container-info-develop'>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={imagem} alt="" />
+                                <img className='ft-time' src={ramon} alt="" />
                             </Box>
 
                             <Box className='container-desenvolvedor'>
-                                <Typography className='nome-develop' variant="h4" gutterBottom> nome do individuo</Typography>
+                                <Typography className='nome-develop' variant="h4" gutterBottom> Ramon siqueira</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut reiciendis dicta sunt porro voluptates quis ea quaerat vero ex eveniet at voluptas praesentium magnam cupiditate harum, natus fugiat? Quae.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Formado no Bootcamp da Generation Brasil e Cursando Big data e Inteligência na Anhembi Morumbi. Um entusiasta da programação apaixonado por transformar ideias em soluções inovadoras.</Typography>
 
-                                <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /></Typography>
+                                <Typography variant="subtitle1" gutterBottom>
+                                    <a className='decoration-none' href="https://github.com/Ramon-Siqueira"><GitHubIcon /></a>
+                                    <a className='decoration-none' href="https://www.linkedin.com/in/ramonsiqueira80"> <LinkedInIcon /> </a></Typography>
                             </Box>
                         </Box>
 
                         <Box className='container-info-develop-2'>
 
                             <Box className='container-desenvolvedor'>
-                                <Typography className='nome-develop' variant="h4" gutterBottom> nome do individuo</Typography>
+                                <Typography className='nome-develop' variant="h4" gutterBottom>Gustavo Santos</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut reiciendis dicta sunt porro voluptates quis ea quaerat vero ex eveniet at voluptas praesentium magnam cupiditate harum, natus fugiat? Quae.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>28 anos, moro em São Paulo, atualmente recém formado no Bootcamp de Java FullStack pela Generation Brasil, tem um cachorro chamado Lebron James, leitor de livros e critico de cinema.</Typography>
 
-                                <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /></Typography>
+                                <Typography variant="subtitle1" gutterBottom>
+                                    <a className='decoration-none' href="https://github.com/GustavoZambonSantos"><GitHubIcon /></a>
+                                    <a className='decoration-none' href="https://www.linkedin.com/in/gustavo-santos-2a3505118/"> <LinkedInIcon /></a></Typography>
                             </Box>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={imagem} alt="" />
+                                <img className='ft-time' src={gustavo} alt="" />
                             </Box>
                         </Box>
 
                         <Box className='container-info-develop'>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={imagem} alt="" />
+                                <img className='ft-time' src={kaique} alt="" />
                             </Box>
 
                             <Box className='container-desenvolvedor'>
@@ -166,7 +181,7 @@ function Sobrenos() {
                                 <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /> </Typography>
                             </Box>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={imagem} alt="" />
+                                <img className='ft-time' src={kaique} alt="" />
                             </Box>
                         </Box>
                     </Box>
