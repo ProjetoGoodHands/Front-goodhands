@@ -1,7 +1,7 @@
 interface Tema {
     id: number;
     causa: string,
-    metaArrecadacao: 0
+    metaArrecadacao: number,
 }
 
 export default Tema;

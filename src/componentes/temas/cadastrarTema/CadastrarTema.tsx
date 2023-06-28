@@ -13,7 +13,9 @@ function CadastrarTema() {
     const [token, setToken] = useLocalStorage('token');
     const [tema, setTema] = useState<Tema>({
         id: 0,
-        descricao: ''
+        causa: '',
+        metaArrecadacao: 0
+       
     })
 
     useEffect(() => {
@@ -78,8 +80,9 @@ function CadastrarTema() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >cadastre uma causa</Typography>
+                <TextField value={tema.causa} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="causa" label="causa" variant="outlined" name="causa" margin="normal" fullWidth />
+                <TextField value={tema.metaArrecadacao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="metaArrecadacao" label="digite o valor" variant="outlined" name="metaArrecadacao" margin="normal" fullWidth />
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>

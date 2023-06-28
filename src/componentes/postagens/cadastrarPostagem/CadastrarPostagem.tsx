@@ -25,19 +25,25 @@ function CadastroPostagem() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
-            descricao: ''
+            causa: '',
+            metaArrecadacao: 0,
+            
         })
     const [postagem, setPostagem] = useState<Postagem>({
+            
         id: 0,
+        imagem:'',
         titulo: '',
-        texto: '',
-        tema: null
+        descricao: '',
+        arrecadacao: 0,
+        temapostagem: null
+       
     })
 
     useEffect(() => {
         setPostagem({
             ...postagem,
-            tema: tema
+            temapostagem: tema
         })
     }, [tema])
 
@@ -69,7 +75,7 @@ function CadastroPostagem() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            temapostagem: tema
         })
 
     }
@@ -107,16 +113,19 @@ function CadastroPostagem() {
 
             <form onSubmit={onSubmit}><hr />
                 <Typography variant="h3" color="textSecondary" component="h1" align="center">Crie uma nova Postagem e ajude a salvar uma vida!!</Typography>
+                <p>imagem</p>
+                <TextField value={postagem.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="imagem" label="url da imagem
+                 " variant="outlined" name="imagem" margin="normal" fullWidth /> <br /><br />
                 <p>Titulo</p>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Digite um título para a sua postagem" variant="outlined" name="titulo" margin="normal" fullWidth /> <br /><br />
                 <p>Descrição</p>
-                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Descreva o Objetivo da sua postagem" name="texto" variant="outlined" margin="normal" fullWidth /> <br /><br />
+                <TextField value={postagem.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="descricao" label="Descreva o Objetivo da sua postagem" name="descricao" variant="outlined" margin="normal" fullWidth /> <br /><br />
                 <p>Meta de Arrecadação</p>
                 <TextField label='Digite um valor ' variant='outlined' name='meta' margin='normal' fullWidth />
                 <br /><br />
 
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label">Tema</InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -127,11 +136,11 @@ function CadastroPostagem() {
                         })}>
                         {
                             temas.map(tema => (
-                                <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
+                                <MenuItem value={tema.id}>{tema.causa}</MenuItem>
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
+                    <FormHelperText>Escolha um causa para a postagem</FormHelperText>
                     <hr />
                     <Button type="submit" variant="contained" color="primary">
                         Finalizar
