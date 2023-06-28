@@ -1,6 +1,7 @@
-interface Tema{
+interface Tema {
     id: number;
-    descricao: string;
+    causa: string,
+    metaArrecadacao: 0
 }
 
 export default Tema;
