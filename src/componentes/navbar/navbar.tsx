@@ -43,19 +43,20 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        <Link to="/sobre" className='Link-logar'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
-                                    Sobre
-                                </Typography>
-                            </Box>
-                        </Link>
+                        
                         <Link to="/cadastro" className='Link-logar'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
                                     Cadastrar
                                 </Typography>
 
+                            </Box>
+                        </Link>
+                        <Link to="/sobre" className='Link-logar'>
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit">
+                                    Sobre
+                                </Typography>
                             </Box>
                         </Link>
                         <Link to="/contato" className='Link-logar'>
