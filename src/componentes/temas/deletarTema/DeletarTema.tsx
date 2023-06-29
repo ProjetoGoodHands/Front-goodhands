@@ -6,6 +6,7 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import './DeletarTema.css';
+import { toast } from 'react-toastify';
 
 
 function DeletarTema() {
@@ -16,7 +17,16 @@ function DeletarTema() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Voce precisa estar logado', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -43,7 +53,16 @@ function DeletarTema() {
                 'Authorization': token
             }
         });
-        alert('Tema deletado com sucesso');
+        toast.success('Causa deletada com sucesso', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
     }
 
     function nao() {

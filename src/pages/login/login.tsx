@@ -5,6 +5,7 @@ import { Grid, Box, Typography, TextField, Button } from "@material-ui/core";
 import { Link, useNavigate } from 'react-router-dom';
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
+import { toast } from 'react-toastify';
 
 function Login() {
     let navigate = useNavigate();
@@ -38,9 +39,27 @@ function Login() {
             await login(`/usuarios/logar`, userLogin, setToken)
 
 
-            alert('Usuário logado com sucesso!');
+            toast.success('Usuario logado com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } catch (error) {
-            alert('Dados do usuário inconsistentes. Erro ao logar!');
+            toast.error('Dados do usuário inconsistentes. Erro ao logar!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
     }
 

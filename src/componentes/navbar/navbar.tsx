@@ -6,6 +6,7 @@ import './navbar.css'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage';
+import { toast } from 'react-toastify';
 
 
 function Navbar() {
@@ -15,9 +16,20 @@ function Navbar() {
 
     function goLogout() {
         setToken('')
-        alert("Usuário deslogado")
+        toast.info('Usuario deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
         navigate('/login')
+    
     }
+            
     return (
         <>
             <AppBar className='appBar' position="static">

@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './componentes/footer/footer';
 import Navbar from './componentes/navbar/navbar';
 import Sobrenos from './pages/sobrenos/sobrenos';
-import Postagem from './pages/home/postagem';
 import Home from './pages/inicio/home';
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';
 import Contato from './pages/contato/Contato';
@@ -15,11 +14,15 @@ import CadastroTema from './componentes/temas/cadastrarTema/CadastrarTema';
 import DeletarPostagem from './componentes/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './componentes/temas/deletarTema/DeletarTema';
 import CadastrarTema from './componentes/temas/cadastrarTema/CadastrarTema';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
   return (
+    
     <BrowserRouter>
+    <ToastContainer/>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes> // Antigo Switch
@@ -43,6 +46,7 @@ function App() {
       </div>
       <Footer />
     </BrowserRouter>
+    
   );
 }
 

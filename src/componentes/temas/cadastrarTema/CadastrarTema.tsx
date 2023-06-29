@@ -5,6 +5,7 @@ import { Container, Typography, TextField, Button } from "@material-ui/core"
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import './CadastrarTema.css';
+import { toast } from 'react-toastify';
 
 
 function CadastrarTema() {
@@ -20,7 +21,16 @@ function CadastrarTema() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Voce precisa estar logado', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -60,14 +70,32 @@ function CadastrarTema() {
                     'Authorization': token
                 }
             })
-            alert('Tema atualizado com sucesso');
+            toast.success('Causa atualizada com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } else {
             post(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Tema cadastrado com sucesso');
+            toast.success('Causa cadastrada com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
         back()
 
