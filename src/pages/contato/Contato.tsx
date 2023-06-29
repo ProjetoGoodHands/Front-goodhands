@@ -5,7 +5,7 @@ import { Box, useTheme } from "@mui/material";
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import WhereToVoteIcon from '@mui/icons-material/WhereToVote';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-
+import imgContato from '../../assets/img/Contact us-pana.png'
 function Contato() {
 
     const theme =  useTheme();
@@ -22,15 +22,14 @@ function Contato() {
 
     return (
         <>
-            <Grid container direction='row' justifyContent='center' alignItems='center' style={{ backgroundColor: theme.palette.background.paper}} className="gridContato">
+            <Grid container direction='row' justifyContent='center' alignItems='center'  className="gridContato">
                 <Grid item xs={12} sm={6} className="alinhamento">
                     <Box textAlign='center'>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' className='textoPrimario' >Contato</Typography>
-                        <Typography variant='h6' color='textPrimary' align='center' className='textoSecundario'paragraph  >Se preferir, preencha o formulário ao lado para nos contatar.</Typography>
                         <Typography variant='h6' color='textPrimary' align='center' className="telicon" paragraph >
                             <PermPhoneMsgIcon /> (11) 2123-8000
                         </Typography>
-                        <Typography variant='h6' color='textPrimary' align='center' className="emailicon" paragraph >
+                        <Typography variant='h6' align='center' className="emailicon" paragraph >
                             <MailOutlineIcon />goodhandsprojetogeneration@gmail.com
                         </Typography>
                         <Typography variant='h6' color='textPrimary' align='center' className="emailicon" paragraph >
@@ -38,9 +37,22 @@ function Contato() {
                         </Typography>
                     </Box>
                 </Grid>
-                <Grid item xs={12} sm={4} alignItems='center' style={{ backgroundColor: theme.palette.background.default }} className="teste">
-                    <main className="contato">
-                        <form className="formulario">
+                <Grid item xs={12} sm={4} alignItems='center' className="teste">
+                    <img className="imgContato" src={imgContato} alt="" />
+                </Grid>
+            </Grid>
+            <Grid container justifyContent='center' alignItems='center' className='gridforme'>
+                <Box className="formulario-contato">
+
+                    <Box>
+                    <Typography variant='h6' color='textPrimary' align='center' className='textoSecundario'paragraph  >Se preferir, preencha o formulário para nos contatar.</Typography>
+                     </Box>
+                    <Box className="contato" flexDirection='column' justifyContent='center' alignContent='center'>
+                        <Box>
+                            <Typography className='text-forme' variant='h6' color='textPrimary' align='center' paragraph  >formulário</Typography>
+                         </Box>
+                        <Box className='container-formulario'>
+                         <form className="formulario">
                             <TextField
                                 className="textFieldCont"
                                 id="nome"
@@ -80,18 +92,19 @@ function Contato() {
                                 />
                             </Box>
                             <Box textAlign='center' my={2}>
-                                <Button variant='contained' color='primary' type='submit' onClick={handleEnviar} >Enviar</Button>
+                                <Button className='button-contato' variant='contained' color='primary' type='submit' onClick={handleEnviar} >Enviar</Button>
                             </Box>
                         </form>
-                    </main>
-                </Grid>
-            </Grid>
+                        </Box>
+                    </Box>
+                </Box>
             <Snackbar
                 open={enviado}
                 autoHideDuration={3000}
                 onClose={handleFecharSnackbar}
                 message="Mensagem enviada com sucesso!"
             />
+            </Grid>
 
 
         </>

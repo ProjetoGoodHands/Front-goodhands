@@ -1,30 +1,90 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:wght@300;400;700&family=DM+Sans:ital@1&family=Heebo:wght@300;400;700&family=Nunito+Sans:wght@400;600&family=Source+Code+Pro:ital,wght@0,200;0,400;1,500&family=Work+Sans:ital,wght@1,400;1,600&display=swap');
 
-
-/* .corPrimaria {
-  background-color: "#8cb570";
-} */
-
-.contato {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  padding: 0px;
-}
-
-.teste {
-  border-radius: 16px;
-  margin-top: 300px;
-
-}
 
 .gridContato {
-  padding: 30px;
+  background-color: #8f388d;
+}
+
+
+.imgContato {
+  max-width: 500px;
+}
+
+.gridforme{
+  background-image: url(../../assets/img/Mailbox-bro.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.formulario-contato {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+ 
+}
+
+.textoPrimario {
+  font-family: 'Averia Serif Libre', cursive !important;
+  color: white !important;
+  text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
+  font-size: 70px !important;
+}
+
+.telicon {
+  font-family: 'Averia Serif Libre', cursive !important;
+  color: white !important;
+  text-shadow: 4px 3px 10px rgba(0, 0, 0.6, 0.10);
+}
+
+.emailicon {
+  font-family: 'Averia Serif Libre', cursive !important;
+  color: white !important;
+  text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
+}
+
+.contato {
+  border-radius: 25px;
+  box-shadow:4px 3px 20px rgba(0, 0, 0.6, 1.10) ;
+  background-color:#dc81d7 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  max-width: 450px;
+}
+
+.text-forme{
+  margin-top: 20px !important;
+  color: white !important;
+  font-size: 32px !important;
+  font-family: 'Averia Serif Libre', cursive !important;
+   text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
+}
+
+.container-formulario{
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.textFieldCont{
+  background-color: #e27bdd !important;
 }
 
 .formulario {
-  width: 80%;
+  width: 300px;
+}
+
+.textoSecundario{
+  font-family: 'Averia Serif Libre', cursive !important;
+  font-size: 25px !important;
+  text-shadow: 5px 5px 16px rgba(0, 0, 0.6, 1.0) !important;
 }
 
 .textFieldCont {
@@ -33,50 +93,9 @@
   margin: 10px;
 }
 
-#sobre {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: #DECDF5;
-  border-radius: 16px;
-  gap: 20px;
-}
-
-.textoPrimario {
-
-  --fonte-principal: 'Open Sans', sans-serif !important;
-}
-
-.textoSecundario {
-  --fonte-segundaria: 'Tenor Sans', sans-serif !important;
-}
-
-
-.button {
-  font-family: 'lato' Roboto;
-  background-color: var(--background-nav);
-  font-weight: 800;
-  color: white;
-}
-
-
-.telicon img {
-  width: 30px;
-  height: 30px;
-}
-
-.emailicon img {
-  width: 30px;
-  height: 30px;
-}
-
-.alinhamento {
-  padding-right: 100px;
-  height: 400px;
-}
-
-@media (max-width: 600px) {
-  .gridContato {
-    padding: 10px;
-  }
+.button-contato{
+  font-family: 'Averia Serif Libre', cursive !important;
+  background-color: #8f388d !important;
+  border-radius: 20px !important;
+ width: 150px !important;
 }
