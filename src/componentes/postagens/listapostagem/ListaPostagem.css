@@ -1,3 +1,33 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.boxcard {
+display: flex;
+flex-direction: column;
+align-content: space-between !important;
+justify-content: space-between !important;
+}
+
+.ajustarimg {
+margin: 0;
+padding: 0;
+width: 15rem;
+max-width: 100%;
+
+}
+
+.ajustardescricao {
+ margin: 0;
+padding: 0;
+width: 15rem;
+max-width: 100%;
+}
+
+.CardContent {
+    border-radius: 22px;
+background: #e0e0e0;
+box-shadow:  35px 35px 70px #636363,
+             -35px -35px 70px #ffffff;
+             height: 100%;
+}
