@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:wght@300;400;700&family=DM+Sans:ital@1&family=Heebo:wght@300;400;700&family=Nunito+Sans:wght@400;600&family=Source+Code+Pro:ital,wght@0,200;0,400;1,500&family=Work+Sans:ital,wght@1,400;1,600&display=swap');
+
+
+.contaier-termos-de-uso{
+    margin-top: 30px;
+    max-width: 1000px;
+}
+
+.h2-termos-de-uso{
+    color: black !important;
+    font-family: 'Averia Serif Libre', cursive !important;
+    font-size: 40px !important;
+    margin: 40px 0 !important;
+}
+
+.container-box-bem-vindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-bem-vindo{
+    max-width: 800px;
+}
+
+
+.imgTermoDeUso{
+    width: 100%;
+}
+
+.container-box-bem-vindo .box-bem-vindo p{
+    font-size: 24px;
+    font-family: 'Averia Serif Libre', cursive;
+    text-indent: 18px;
+}
+
+.p-termos-de-uso{
+    margin: 30px;
+}
+
+.p-termos-de-uso p{
+    font-size: 14px;
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: 800;
+    text-indent: 18px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Averia Serif Libre', cursive;
+    text-indent: 18px;
+}
+
+p span{
+    font-size: 26px;
+    font-family: 'Averia Serif Libre', cursive;
+
+}

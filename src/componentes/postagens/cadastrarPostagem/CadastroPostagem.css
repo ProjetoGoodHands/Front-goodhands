@@ -1,12 +1,61 @@
-.topo{
-    margin-top: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Averia+Serif+Libre:wght@300;400;700&family=DM+Sans:ital@1&family=Heebo:wght@300;400;700&family=Nunito+Sans:wght@400;600&family=Source+Code+Pro:ital,wght@0,200;0,400;1,500&family=Work+Sans:ital,wght@1,400;1,600&display=swap');
+
+
+.container-cadastrarPost{
+    background-color:#8f388d;
 }
 
-#texto{
+.alinha-info-cadastroPost{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center !important;
+}
 
-    color: black;
-    font: normal 14pt italic;
+.alinha-titulo-postagem{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.alinha-titulo-postagem .titulo-postagem {
+    text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
+    text-align: left !important;
+    color: white;
+    font-weight: 600;
+    font-family: 'Averia Serif Libre', cursive ;
+    
+}
+.alinha-titulo-postagem .titulo-postagem span{
+   color: rgb(34, 18, 141);
+}
+
+.alinha-img-cadastroPost{
+    display: flex;
+    justify-content: center;
+}
+
+.imgCadastroPost{
+    width: 60%;
+}
+
+.box-cadastroPost{
+    display: flex;
+    align-content: center;
+    justify-content: center !important;
+    padding: 20px;
     background-color: white;
-    height: 127px;
+}
 
+.MuiGrid-container {
+    justify-content: center;
+}
+
+.tema-post{
+    font-weight: 600;
+    font-family: 'Averia Serif Libre', cursive ;
+}
+
+.topo{
+    margin: 20px;
 }
