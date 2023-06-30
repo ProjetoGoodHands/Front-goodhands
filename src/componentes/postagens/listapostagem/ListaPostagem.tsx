@@ -42,50 +42,38 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          <Box className='boxcard' m={2} > 
+          <Box className='boxcard' m={2} >
             <Card className='CardContent' variant="outlined">
               <CardContent>
+                <Box>
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
                 <Typography color="textSecondary" gutterBottom>
                   <img className='ajustarimg' src={post.imagem} alt="" />
-                </Typography> 
+                </Typography>
                 <Typography variant="h5" component="h2">
                   {post.titulo}
-                </Typography> <br /> 
+                </Typography> <br />
                 <Typography className='ajustardescricao' variant="body2" component="p">
                   {post.descricao}
-                </Typography> <br /> 
+                </Typography> <br />
+                  
+                </Box>
+                <Box>
+                <hr />
                 <Typography variant="body2" component="p">
                   Valor arrecadado: {post.arrecadacao}
-                </Typography> <br /> 
+                </Typography> <br />
                 <Typography variant="body2" component="p">
                   {post.temapostagem?.causa}
-                </Typography> <br /> 
+                </Typography> <br />
                 <Typography variant="body2" component="p">
                   Meta para arrecadacao: {post.temapostagem?.metaArrecadacao}
-                </Typography> <br /> 
-              </CardContent>
-              <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5}>
+                </Typography> <br />
 
-                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                        atualizar
-                      </Button>
-                    </Box>
-                  </Link>
-                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
-                        deletar
-                      </Button>
-                    </Box>
-                  </Link>
                 </Box>
-              </CardActions>
+              </CardContent>
             </Card>
           </Box>
         ))

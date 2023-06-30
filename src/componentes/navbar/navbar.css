@@ -18,6 +18,7 @@
     background-color: #762075 !important;
     min-height: 60px !important;
     margin-bottom: 0px;
+    z-index: 2;
 }
 
 .direcao-navbar{

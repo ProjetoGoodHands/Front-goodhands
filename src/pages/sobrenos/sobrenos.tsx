@@ -14,28 +14,28 @@ function Sobrenos() {
     return (
         <>
             <Grid md={12} container id='sobre-nos-apresentacao' >
-                
-                    <Box className='texto-primeiro'>
-                        <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
-                            buscamos <span className='decoracao-texto-sobre'>soluções criativas</span> .
-                        </Typography>
-                        <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
-                            Valorizamos a colaboração e
-                        </Typography>
-                        <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
-                            o <span className='decoracao-texto-sobre'>impacto positivo no mundo.</span>
-                        </Typography>
 
-                        <button className='button-tela-sobre'>saiba mais</button>
-                    </Box>
-                    <Box>
-                        <img className='ft-equipe' src={img} alt="" />
-                    </Box>
-                
+                <Box className='texto-primeiro'>
+                    <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
+                        buscamos <span className='decoracao-texto-sobre'>soluções criativas</span> .
+                    </Typography>
+                    <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
+                        Valorizamos a colaboração e
+                    </Typography>
+                    <Typography className='descubra-quem-somos' variant="subtitle1" gutterBottom>
+                        o <span className='decoracao-texto-sobre'>impacto positivo no mundo.</span>
+                    </Typography>
+
+                    <button className='button-tela-sobre'>saiba mais</button>
+                </Box>
+                <Box>
+                    <img className='ft-equipe' src={img} alt="" />
+                </Box>
+
             </Grid>
 
             <Grid md={12} container justifyContent="center" alignItems="center" className='apresentacao-goodhands-1'>
-                    
+
                 <Grid alignItems="center" item md={6}>
                     <Box>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='devscard2' >Good Hands</Typography>
@@ -49,7 +49,7 @@ function Sobrenos() {
                 </Grid>
 
                 <Grid item md={6}>
-                    <Box  textAlign={'center'}>
+                    <Box textAlign={'center'}>
                         <img className="goodHands-sobre-nos" src="https://cdn.discordapp.com/attachments/1087794407052419213/1120330267660390530/LogoUnicaPNG.png" referrerPolicy="no-referrer" />
                     </Box>
                 </Grid>
@@ -65,12 +65,12 @@ function Sobrenos() {
                     <Box>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='titulomissao'>Pelo que lutamos</Typography>
                         <Typography variant="body1" gutterBottom color="textPrimary" component="h5" align="center" className='quem-somos'>  Nosso projeto tem como meta principal, que todo e qualquer causa criada pelos nossos usuários tenha o maior nível de alcance possível, sendo assim, nos comprometemos
-                        em criar um ambiente no qual seja simples e de fácil navegação tanto para um usuário quanto para quem visitar nosso site. Criado como um projeto 100% não governamental, o Good Hands tem como valores respeito ao próximo, trablaho em equipe, diversidade, foco no crescimento e desenvolvimento social, entre outros, tendo como missão se tornar uma ONG de nível nacional, alcançando um público em torno do país e auxiliando no combate á pobresa e a desigualdade social através da ajuda coletiva entre as pessoas, insentivando solidariedade, boas interações, respeito e diversidade entre elas.</Typography>
+                            em criar um ambiente no qual seja simples e de fácil navegação tanto para um usuário quanto para quem visitar nosso site. Criado como um projeto 100% não governamental, o Good Hands tem como valores respeito ao próximo, trablaho em equipe, diversidade, foco no crescimento e desenvolvimento social, entre outros, tendo como missão se tornar uma ONG de nível nacional, alcançando um público em torno do país e auxiliando no combate á pobresa e a desigualdade social através da ajuda coletiva entre as pessoas, insentivando solidariedade, boas interações, respeito e diversidade entre elas.</Typography>
                     </Box>
                 </Grid>
             </Grid>
 
-            
+
 
             <Grid container alignItems="center">
                 <Grid xs={12} >
