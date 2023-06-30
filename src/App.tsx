@@ -16,11 +16,13 @@ import DeletarTema from './componentes/temas/deletarTema/DeletarTema';
 import CadastrarTema from './componentes/temas/cadastrarTema/CadastrarTema';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 
 function App() {
   return (
-    
+    <Provider store={store}>
     <BrowserRouter>
     <ToastContainer/>
       <Navbar />
@@ -46,7 +48,7 @@ function App() {
       </div>
       <Footer />
     </BrowserRouter>
-    
+    </Provider>
   );
 }
 

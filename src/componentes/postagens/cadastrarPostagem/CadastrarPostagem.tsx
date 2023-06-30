@@ -3,20 +3,24 @@ import React, { ChangeEvent, useEffect, useState } from 'react'
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Grid, Box } from "@material-ui/core"
 import Tema from '../../../models/Tema';
-import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
 import './CadastroPostagem.css';
 import { toast } from 'react-toastify';
 import imgCadastroPost from '../../../assets/img/New entries-rafiki.png'
 import ListaPostagem from '../listapostagem/ListaPostagem';
 import TermoDeUso from './termosDeUso/TermosDeUso'
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function CadastroPostagem() {
 
-    let navigate = useNavigate();
+    const navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
-    const [token, setToken] = useLocalStorage('token');
+
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {
@@ -165,8 +169,8 @@ function CadastroPostagem() {
                         <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Digite um título para a sua postagem" variant="outlined" name="titulo" margin="normal" fullWidth />
                         <p className='tema-post'>Descrição</p>
                         <TextField value={postagem.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="descricao" label="Descreva o Objetivo da sua postagem" name="descricao" variant="outlined" margin="normal" fullWidth />
-                        <p className='tema-post'>Meta de Arrecadação</p>
-                        <TextField label='Digite um valor ' variant='outlined' name='meta' margin='normal' fullWidth />
+                        <p className='tema-post'>Valor arrecadado</p>
+                        <TextField value={postagem.arrecadacao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}id='arrecadacao' label='Digite um valor ' variant='outlined' name='arrecadacao' margin='normal' fullWidth type='number'/>
                        
 
                         <FormControl >
