@@ -21,13 +21,13 @@ function Footer() {
                     <Typography variant="h5" align="center" gutterBottom className='texto1'>Siga nas redes sociais </Typography>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <a href="https://www.facebook.com/ramon.siqueira80/" target="_blank">
+                    <a href="" target="_blank">
                         <FacebookIcon className='redes' />
                     </a>
-                    <a href="https://www.instagram.com/ramon_as80/" target="_blank">
+                    <a href="" target="_blank">
                         <InstagramIcon className='redes' />
                     </a>
-                    <a href="https://www.linkedin.com/in/ramonsiqueira80/" target="_blank">
+                    <a href="https://github.com/ProjetoGoodHands" target="_blank">
                         <GitHubIcon className='redes' />
                     </a>
                 </Box>

@@ -91,7 +91,7 @@ function Sobrenos() {
                             <Box className='container-desenvolvedor'>
                                 <Typography className='nome-develop' variant="h4" gutterBottom> João kaique da silva</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Tenho 23 anos e moro em São Paulo. Recentemente, concluí o Bootcamp de Java FullStack e estou empolgado com minha formação e as oportunidades que surgem a partir dela. Sou apaixonado por esportes e tecnologia, e estou sempre em busca de novas oportunidades de aprendizado.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Tenho 23 anos e moro em São Paulo. Recentemente, concluí o Bootcamp de Java FullStack e estou empolgado com minha formação e as oportunidades que surgiram a partir dela. Sou apaixonado por esportes e tecnologia, e estou sempre em busca de novas experiencias de aprendizado.</Typography>
 
                                 <Typography variant="subtitle1" gutterBottom>
                                     <a className='decoration-none' href="https://github.com/kaiquesilvadev"> <GitHubIcon /></a>
@@ -123,7 +123,7 @@ function Sobrenos() {
                             <Box className='container-desenvolvedor'>
                                 <Typography className='nome-develop' variant="h4" gutterBottom> Ramon siqueira</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Formado no Bootcamp da Generation Brasil e Cursando Big data e Inteligência na Anhembi Morumbi. Um entusiasta da programação apaixonado por transformar ideias em soluções inovadoras.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Formado no Bootcamp da Generation Brasil e Cursando Big data e Inteligência na Anhembi Morumbi. Sou um entusiasta da programação apaixonado por transformar ideias em soluções inovadoras.</Typography>
 
                                 <Typography variant="subtitle1" gutterBottom>
                                     <a className='decoration-none' href="https://github.com/Ramon-Siqueira"><GitHubIcon /></a>
@@ -157,7 +157,7 @@ function Sobrenos() {
 
                                 <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Estudante de Análise e Desenvolvimento de Sistemas com amplo conhecimento em desenvolvimento de aplicações. Estou focado em trabalhar em projetos pessoais para aprimorar minhas habilidades em programação e desenvolvimento, criando aplicações úteis e que tenham algum caso de uso para o mercado.</Typography>
 
-                                <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /></Typography>
+                                <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> </Typography>
                             </Box>
                         </Box>
 

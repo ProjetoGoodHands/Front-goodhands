@@ -21,7 +21,7 @@
 
 .texto-primeiro .descubra-quem-somos{
     font-size: 35px;
-    color: white;
+    color: #ffffff;
     font-weight: 700;
     line-height: 0.6;
     text-shadow: 4px 3px 20px rgba(0, 0, 0.6, 1.10);
@@ -29,7 +29,7 @@
 
 .decoracao-texto-sobre{
     font-family: 'Averia Serif Libre', cursive !important;
-    color: #e471de;
+    color: #ffffff;
 }
 
 .button-tela-sobre{

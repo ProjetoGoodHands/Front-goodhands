@@ -1,9 +1,32 @@
+.CardContent #container-box-card{
+    width: 320px ;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-content: space-between !important;
 
-
-.CardContent {
-    border-radius: 22px;
-    background: #e0e0e0;
-    box-shadow: 35px 35px 70px #636363,
-        -35px -35px 70px #ffffff;
-    height: 100%;
 }
+
+.postagens1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#button1{
+    color: white;
+    background-color:#762075;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+}
+#button2{
+    color: #762075;
+    background-color:white;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+
+}
+
