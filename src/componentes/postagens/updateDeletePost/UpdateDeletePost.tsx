@@ -10,28 +10,33 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
 export default function UpdateDeletePost() {
-    const [posts, setPosts] = useState<Postagem[]>([]);
+    const [posts, setPosts] = useState<Postagem[]>([])
     let navigate = useNavigate();
-    const token = useSelector<TokenState, TokenState['tokens']>((state) => state.tokens);
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
-        if (token === '') {
-            alert('Você precisa estar logado');
-            navigate('/login');
+        if (token == "") {
+            alert("Você precisa estar logado")
+            navigate("/login")
+
         }
-    }, [token]);
+    }, [token])
 
     async function getPost() {
-        await busca('/postagens', setPosts, {
+        await busca("/postagens", setPosts, {
             headers: {
-                Authorization: token,
-            },
-        });
+                'Authorization': token
+            }
+        })
     }
 
     useEffect(() => {
-        getPost();
-    }, [posts.length]);
+
+        getPost()
+
+    }, [posts.length])
 
     const calculateProgress = (arrecadacao: number, metaArrecadacao: number) => {
         return (arrecadacao / metaArrecadacao) * 100;
@@ -85,24 +90,24 @@ export default function UpdateDeletePost() {
                                     </Box>
                                 </CardContent>
                                 <CardActions>
-                                    <Box display="flex" justifyContent="center" mb={1.5}>
+                                <Box display="flex" justifyContent="center" mb={1.5}>
 
-                                        <Link to={'/formularioPostagem/${post.id}'} className="text-decorator-none" >
-                                            <Box mx={1}>
-                                                <Button variant="contained" className="marginLeft" size='small' color="primary" id='button1'>
-                                                    atualizar
-                                                </Button>
-                                            </Box>
-                                        </Link>
-                                        <Link to={'/deletarPostagem/${post.id}'} className="text-decorator-none">
-                                            <Box mx={1}>
-                                                <Button variant="contained" size='small' color="secondary" id='button2'>
-                                                    deletar
-                                                </Button>
-                                            </Box>
-                                        </Link>
-                                    </Box>
-                                </CardActions>
+                                    <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                                        <Box mx={1}>
+                                            <Button variant="contained" className="button1" size='small' color="primary" >
+                                                atualizar
+                                            </Button>
+                                        </Box>
+                                    </Link>
+                                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                                        <Box mx={1}>
+                                            <Button variant="contained" size='small' color="secondary" className='button2'>
+                                                deletar
+                                            </Button>
+                                        </Box>
+                                    </Link>
+                                </Box>
+                            </CardActions>
                             </Card>
                         </Box>
                     ))}

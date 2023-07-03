@@ -3,3 +3,19 @@
 
 
 }
+
+.button1{
+    color: white !important;
+    background-color:#762075 !important;
+    border-radius: 10px !important;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755) !important;
+}
+.button2{
+    color: #762075 !important;
+    background-color:white !important;
+    border-radius: 10px !important;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755) !important;
+
+}
