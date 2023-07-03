@@ -191,7 +191,7 @@ function CadastroPostagem() {
                             </Select>
                             <FormHelperText>Escolha um causa para a postagem</FormHelperText>
                             <hr />
-                            <Button type="submit" variant="contained" color="primary">
+                            <Button  className="button-finalizar" type="submit" variant="contained" color="primary">
                                 Finalizar
                             </Button>
                             <hr />

@@ -9,6 +9,8 @@ import img from '../../assets/img/Design team-amico.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import vinicius from '../../assets/img/vinicius.png'
+
 
 function Sobrenos() {
     return (
@@ -147,31 +149,18 @@ function Sobrenos() {
 
                         <Box className='container-info-develop'>
                             <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={kaique} alt="" />
+                                <img className='ft-time' src={vinicius} alt="" />
                             </Box>
 
                             <Box className='container-desenvolvedor'>
-                                <Typography className='nome-develop' variant="h4" gutterBottom> nome do individuo</Typography>
+                                <Typography className='nome-develop' variant="h4" gutterBottom>Vinicius almeida</Typography>
 
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut reiciendis dicta sunt porro voluptates quis ea quaerat vero ex eveniet at voluptas praesentium magnam cupiditate harum, natus fugiat? Quae.</Typography>
+                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom>Estudante de Análise e Desenvolvimento de Sistemas com amplo conhecimento em desenvolvimento de aplicações. Estou focado em trabalhar em projetos pessoais para aprimorar minhas habilidades em programação e desenvolvimento, criando aplicações úteis e que tenham algum caso de uso para o mercado.</Typography>
 
                                 <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /></Typography>
                             </Box>
                         </Box>
 
-                        <Box className='container-info-develop-2'>
-
-                            <Box className='container-desenvolvedor'>
-                                <Typography className='nome-develop' variant="h4" gutterBottom> nome do individuo</Typography>
-
-                                <Typography className='sobre-mim' variant="subtitle1" gutterBottom> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut reiciendis dicta sunt porro voluptates quis ea quaerat vero ex eveniet at voluptas praesentium magnam cupiditate harum, natus fugiat? Quae.</Typography>
-
-                                <Typography variant="subtitle1" gutterBottom> <GitHubIcon /> <LinkedInIcon /> <WhatsAppIcon /> </Typography>
-                            </Box>
-                            <Box className='img-sobre-develop'>
-                                <img className='ft-time' src={kaique} alt="" />
-                            </Box>
-                        </Box>
                     </Box>
                 </Grid>
             </Grid>
