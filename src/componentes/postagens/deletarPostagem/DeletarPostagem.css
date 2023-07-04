@@ -14,3 +14,24 @@
 .btnCancelar {
     margin-right: 20px !important;
 }
+
+#buttonsim{
+    color: white !important;
+    background-color:#762075 !important;
+    border-radius: 10px !important;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755) !important;
+}
+
+#buttonnao{
+    color: #762075 !important;
+    background-color:white !important;
+    border-radius: 10px !important;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755) !important;
+}
+
+#carddelete{
+    margin-top: 70px;
+  
+}
