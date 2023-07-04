@@ -108,7 +108,7 @@ function CadastrarTema() {
     }
 
     function back() {
-        navigate('/temas')
+        navigate('/home')
     }
 
     return (

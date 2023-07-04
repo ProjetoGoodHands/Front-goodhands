@@ -76,7 +76,7 @@ function DeletarPostagem() {
     return (
         <>
             <Box m={2}>
-                <Card variant="outlined" >
+                <Card variant="outlined" id='carddelete'>
                     <CardContent>
                         <Box justifyContent="center">
                             <Typography color="textSecondary" gutterBottom>
@@ -91,16 +91,18 @@ function DeletarPostagem() {
                     <CardActions>
                         <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
                             <Box mx={2}>
-                                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary"id='buttonsim'>
                                     Sim
                                 </Button>
                             </Box>
                             <Box>
-                                <Button onClick={nao} variant="contained" size='large' color="secondary">
+                                <Button onClick={nao} variant="contained" size='large' color="secondary" id='buttonnao'>
                                     Não
                                 </Button>
                             </Box>
                         </Box>
+
+                       
                     </CardActions>
                 </Card>
             </Box>

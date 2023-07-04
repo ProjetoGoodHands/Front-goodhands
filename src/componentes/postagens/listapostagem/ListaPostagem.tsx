@@ -47,7 +47,7 @@ function ListaPostagem() {
               <Box id='container-box-card2'>
                 <Box>
                   <Typography color="textSecondary" gutterBottom>
-                    Postagens
+                    
                   </Typography>
                   
                     <img className="ajustarimg" src={post.imagem} alt="" />
@@ -64,15 +64,15 @@ function ListaPostagem() {
                 <Box className='infor-meta'>
                   <hr />
                   <Typography variant="body2" component="p">
-                    Valor arrecadado: {post.arrecadacao}
+                    Valor arrecadado: R$ {post.arrecadacao}
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
-                    {post.temapostagem?.causa}
+                    Tema: {post.temapostagem?.causa}
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
-                    Meta para arrecadação: {post.temapostagem?.metaArrecadacao}
+                    Meta para arrecadação: R$ {post.temapostagem?.metaArrecadacao}
                   </Typography>
                   <br />
                   <LinearProgress
