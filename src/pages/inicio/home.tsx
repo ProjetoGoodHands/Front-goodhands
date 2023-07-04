@@ -1,6 +1,6 @@
 import { Button, Grid, Typography } from '@material-ui/core'
 import { Box } from "@mui/material";
-import './Home.css';
+import './home.css';
 import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem'
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux';
