@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from '@material-ui/core';
-import react from 'react';
 import './TermosDeUso.css';
 import imgTermoDeUso from '../../../../assets/img/Accept terms-pana.png';
 
